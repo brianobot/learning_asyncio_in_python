@@ -59,7 +59,7 @@ for item in generator_function():
 
 
 """
-when the generator function is called, it returns a generator object that implement the iterator protocol, 
+when the generator function is called, it returns a generator object that implements the iterator protocol, 
 which is why it can be placed in the for loop as seen above. now the for loop implicitly calls the next
 function on the object, which executes the function until its meet a yield statement, in the first iteration that would
 mean running through yield 1, and in the second iteration yield 2 and so on, after reaching the yield statement, the function
