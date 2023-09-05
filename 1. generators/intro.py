@@ -69,5 +69,32 @@ give up control and then restart at some later time.
 """
 
 
+# create a list of 4 generator objects, by calling the generator function 4 times
+all_gens = [generator_function(), generator_function(), generator_function(), generator_function()]
 
+print(f"All generators: {all_gens}")
 
+while all_gens:
+    for gen in all_gens:
+        try:
+            print(next(gen))
+        except StopIteration:
+            all_gens.remove(gen)
+
+"""
+First, I invoke my "foo" generator function four times.  Each time, I get a separate, new generator object.  
+My variable "all_gens" thus contains four generator objects.  Each of these knows how to respond to the "next" 
+function, whether explicitly or implicitly via a "for" loop.
+
+We then go through each of our generators, invoking "next" on it.  If we get to the end, then we trap the 
+StopIteration exception.  But wait, do we want to finish just yet?  Maybe, but maybe not... So we remove the 
+current generator from the list, and only when the list is empty do we actually stop the "while" loop.
+
+<this block is copied from the mail, he seem to explain it better, and i don't want to paraphase>
+"""
+
+"""
+Now the generator function above, shows how we can use generator to perform some actions and then pause te generators
+to give room for other generators to execute, this way functions that take time to get a result like reading from networks
+and files can pause and give that time to other functions to continue running. But still this is but the tip of the iceberg.
+"""
