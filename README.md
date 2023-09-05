@@ -12,8 +12,8 @@ not to duplicate ateraisl here, except neccesary...hope we are on the same page?
 
 
 ## Intro... 
-Since i can't share the complete mail content here, below is a snippet of a mail from Reuven M. Lerner
-
+Since i can't share the complete mail content here, below is a snippet of a mail from [Reuven M. Lerner](https://lerner.co.il/)
+Subscribe to his mail [Here](https://sparklp.co/a03dbf14/) 
 ```
 Let's start with some history and comparisons: Back in the olden days (even before I started to use computers), a computer could only do one thing at a time. And indeed, if you had a home computer before the mid-1990s, then your computer could *still* probably only do one thing at a time.
 
