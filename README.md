@@ -57,4 +57,20 @@ each program's time slice is up, in a cooperative multitasking environment, the 
 ```
 
 This history and the introduction of these concepts here would serve to build the proper mindset towards mastering asyncio.
-atleast that what i think, cause i am almost at the same level with you right now in terms of understanding what is going on here.
+atleast that what i think, cause i am almost at the same level with you right now in terms of understanding what is going on here. <pauses!>
+
+## ... Picks up from the Question about being on the same page
+Hopefully, there is some level of appreciation for the centrak idea now for you, there is some for me, from the research and reading i 
+have found out that the other approaches to handling many things at once in programming includes but is not limited to
+writing [threaded programs](https://en.wikipedia.org/wiki/Thread_(computing)) or using [multi-processing](https://en.wikipedia.org/wiki/Multiprocessing) both of which have their pros and cons with threaded programs being notoriously tricky to write
+and multiprocessing program having the overhead of managing communication across process on a system. 
+
+
+## ... This repo is structured in a way that seems naturally intuitive and curated for me
+this is not to say if you somehow have prior knowledge of certain basic concepts you can't just jump around,
+but in order to gain more from this, a proper flow would really help. 
+
+
+## Contribution.
+I am but one Person, any intellectual addition whether in the form of correction or improvement to the content of this repo is
+whole hearted welcome. Clone the report and make you updates, and then make a pull request to the master branch of the repo.
