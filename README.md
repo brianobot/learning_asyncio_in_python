@@ -7,8 +7,8 @@ this repository might help, or atleast stir more interest in your to dive more i
 i am documenting my learning here for reference and to help anyone that stumbles upon this repo. 
 
 I Would point to useful materials that highlight the concepts needed for understanding this, i would try
-not to duplicate ateraisl here, except neccesary...hope we are on the same page? .<gives up control to a different section while
-waiting for the readers response>
+not to duplicate ateraisl here, except neccesary...hope we are on the same page? .
+<gives up control to a different section while waiting for the reader's response>
 
 
 ## Intro... 
