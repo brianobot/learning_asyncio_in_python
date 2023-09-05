@@ -40,6 +40,11 @@ def normal_function():
 result = normal_function() # the function is called and the result value is assigned to a variable
 print(f"\nthe return value of the {normal_function.__name__} is {result}")
 
+"""
+Now to the function presented above, it's a typical function declaration and calling process,
+for most common functions the function starts and returns almost immediately ... and the other part
+of the program is ran ..
+"""
 
 def generator_function():
     # function body 
@@ -47,13 +52,22 @@ def generator_function():
     yield 2
     yield 3
 
+
 # in order to get the values from the generator functions, lets use a for loop
 for item in generator_function():
     print(item)
 
+
 """
-Now to the function presented above, it's a typical function declaration and calling process,
-for most common functions the function starts and returns almost immediately ... and the other part
-of the program is ran ..but some functions have to do some waiting for some external resources, like download
-some data from the web, or read data from a file, or write data into a file.
+when the generator function is called, it returns a generator object that implement the iterator protocol, 
+which is why it can be placed in the for loop as seen above. now the for loop implicitly calls the next
+function on the object, which executes the function until its meet a yield statement, in the first iteration that would
+mean running through yield 1, and in the second iteration yield 2 and so on, after reaching the yield statement, the function
+returns the value and goes to sleep, until it is woken up again by another next statement which happens imlicitly here
+by the for loop. Now what you have seen here, is the mechanism for a function (process) to run for a while
+give up control and then restart at some later time.
 """
+
+
+
+
