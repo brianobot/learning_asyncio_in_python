@@ -1,5 +1,5 @@
 # learning_asyncio_in_python
-Learning asyncio in Python
+Learning asyncio in Python By Brian Obot
 
 If you are like me, and i trust many other people that have found themselves in the strange mental place
 of not really getting the full gists around the asyncio package or syntax in the python ecosystem, then maybe
