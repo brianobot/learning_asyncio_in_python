@@ -42,12 +42,25 @@ print(f"Coroutine Objects: {obj}")
 
 # in order to run the coroutine in the loop we need to create a task from the coroutine and run the loop
 
-loop = asyncio.get_event_loop()
-loop.create_task(greet())
-loop.run_forever()
+# loop = asyncio.get_event_loop()
+# loop.create_task(greet())
+# loop.run_forever()
 
 """
 now this sort of works but then the program hangs, until killed with ctrl-c 
 this is because after our coroutine (task) finished running the loop went on to 
 well, run forever 🙂
 """
+
+# to be able to stop the loop after the task completes, let call the stop method at the end of the task
+
+
+async def greet():
+    print("Hello")
+    loop.stop()
+
+
+loop.create_task(greet())
+loop.run_forever()
+
+# that seem pretty nice 
