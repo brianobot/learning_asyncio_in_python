@@ -15,7 +15,7 @@ loop  = asyncio.get_event_loop()
 # so invoking get_event_loop mutiple times would always give the same event loop
 
 # once gotten, the event loop can be started with the run_forever method
-loop.run_forever()
+# loop.run_forever() # comment out to run the event loop
 
 """
 now what we have done works, the event loop starts and actually runs until stop() is called
@@ -33,4 +33,21 @@ but there are 2 problems
 async def greet():
     print("Hello World!")
 
-    
+
+# just like with generator functions, calling the coroutinr directly would produce a coroutine object
+
+obj = greet()
+print(f"Coroutine Objects: {obj}")
+
+
+# in order to run the coroutine in the loop we need to create a task from the coroutine and run the loop
+
+loop = asyncio.get_event_loop()
+loop.create_task(greet())
+loop.run_forever()
+
+"""
+now this sort of works but then the program hangs, until killed with ctrl-c 
+this is because after our coroutine (task) finished running the loop went on to 
+well, run forever 🙂
+"""
