@@ -10,5 +10,7 @@ which handles the switching, the event loop, which is an infinitely running whil
 different events (functions) allowing each to execute and willingly give up control when sleeping and waiting
 for some input, output.
 
-
+Whenever python encounters the await key inside a task running on an event loop, python knows
+that task is willing to give up control for other tasks to run, usually this wait because this task
+has to perform IO based task which would cause time delay.
 """
